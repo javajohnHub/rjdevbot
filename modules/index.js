@@ -27,6 +27,7 @@ module.exports = function () {
      Note the "wHIte stripes" bug
      */
     addHandler(['help'], 'help');
+    addHandler(['bootstrap'], 'bootstrap');
     addHandler(['call me (.*)', 'my name is (.*)'], 'callme');
     addHandler(['wiki (.*)'], 'wikipedia');
     addHandler(['codepen (.*)'], 'codepen');
