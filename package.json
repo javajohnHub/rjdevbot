@@ -12,6 +12,8 @@
   "dependencies": {
     "botkit": "^0.5.6",
     "dotenv": "^4.0.0",
-    "mongoose": "^4.11.4"
+    "ejs": "^2.5.6",
+    "mongoose": "^4.11.4",
+    "request-promise": "^4.2.1"
   }
 }

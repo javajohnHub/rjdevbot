@@ -4,20 +4,12 @@ var commands = [
     use: 'displays how long the bot has been running',
   },
   {
-    input: 'what is my name, who am i',
-    use: 'displays your username',
-  },
-  {
     input: 'call me <your_name>, my name is <your_name>',
     use: 'tell bot what your nickname is',
   },
   {
     input: 'wiki <your_query>',
     use: 'displays the Wikipedia page for a query',
-  },
-  {
-    input: 'register <your_email>',
-    use: 'Can only be used in a Direct Message to the bot. tell bot your email address to begin the registration process',
   },
   {
     input: 'codepen <recent/popular/picks>',
