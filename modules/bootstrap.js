@@ -2,7 +2,7 @@ module.exports = (handles, controller, bot) => {
     controller.hears(handles, 'direct_message', function (bot, message) {
         var template =
             `
-            <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
