@@ -1,0 +1,17 @@
+{
+  "name": "rjdevbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Edwards <joedw1978@gmail.com> (https://419webdev.site)",
+  "license": "ISC",
+  "dependencies": {
+    "botkit": "^0.5.6",
+    "dotenv": "^4.0.0",
+    "mongoose": "^4.11.4"
+  }
+}
