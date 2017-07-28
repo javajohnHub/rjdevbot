@@ -32,6 +32,6 @@ module.exports = (handles, controller, bot) => {
 </html>
             `;
         bot.reply(message,
-            ':robot_face: ' + template);
+            "```" + template + "```");
     })
 }
