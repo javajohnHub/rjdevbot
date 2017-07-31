@@ -2,7 +2,7 @@ module.exports = (handles, controller, bot) => {
     var rp = require('request-promise');
     controller.hears(handles, 'direct_message,direct_mention,mention', function (bot, message) {
         var search_term = encodeURIComponent(message.match[1]);
-        var url = 'http://localhost:5000/api/search/' + search_term;
+        var url = 'https://rjdevslack.herokuapp.com/api/search/' + search_term;
         var options = {
             uri: url,
             json: true,
