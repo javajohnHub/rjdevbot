@@ -14,8 +14,8 @@ module.exports = (handles, controller, bot) => {
           }])
         })(function(err, result) {
             if (err) console.log(err);
-            var response =  "```" +  result.items[0].synopsis.replace(/\s\s+/g, ' ') 
-            + result.items[0].description +  "```";
+            var response =  "```" +  result.items[0].synopsis.replace(/\s\s+/g, ' ') + "```" 
+            + result.items[0].description 
             bot.reply(message, response);
         });
         
