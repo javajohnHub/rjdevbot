@@ -5,7 +5,7 @@ module.exports = (handles, controller, bot) => {
     
     controller.hears(handles, 'direct_message', function (bot, message) {
         var method = encodeURIComponent(message.match[1]);
-        method = method.replace('_', '-');
+        method = method.replace(/\_/g, '-');
 
         x('http://php.net/manual/en/function.' + method +'.php', {
           items: x('body', [{
