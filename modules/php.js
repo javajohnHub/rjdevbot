@@ -7,7 +7,7 @@ module.exports = (handles, controller, bot) => {
         var method = encodeURIComponent(message.match[1]);
         method = method.replace('_', '-');
 
-        x('http://php.net/manual/en/function.' + method, {
+        x('http://php.net/manual/en/function.' + method +'.php', {
           items: x('body', [{
             synopsis: '.methodsynopsis',
             description: '.rdfs-comment'
