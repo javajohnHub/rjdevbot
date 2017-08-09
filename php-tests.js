@@ -10,6 +10,8 @@ x('http://php.net/manual/en/function.' + method, {
   }])
 })(function(err, result) {
     if (err) console.log(err);
-    console.log(result.items[0].synopsis.replace(/\s\s+/g, ' '));
-    console.log(result.items[0].description);
+    var response =  "```" +  result.items[0].synopsis.replace(/\s\s+/g, ' ') + result.items[0].description +  "```";
+    console.log(response)
+  
 });
+
