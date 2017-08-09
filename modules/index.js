@@ -27,6 +27,7 @@ module.exports = function () {
      Note the "wHIte stripes" bug
      */
     addHandler(['help'], 'help');
+    addHandler(['php (.*)'], 'php');
     addHandler(['yelp (.*)'], 'yelp');
     addHandler(['bootstrap'], 'bootstrap');
     addHandler(['call me (.*)', 'my name is (.*)'], 'callme');
