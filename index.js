@@ -27,7 +27,7 @@ setTimeout(function() {
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
         console.log('body:', body); // Print the HTML for the Google homepage.
     });
-}, 60000 * 5);
+}, 1000);
 
 app.listen(app.get('port'), function () {
     console.log('Node app is running at localhost:' + app.get('port'));
