@@ -18,8 +18,8 @@ module.exports = (handles, controller, bot) => {
         };
         rp(options)
             .then(function (data) {
-                console.log(data.items);
-                //bot.reply(message, data);
+                //console.log(data.items[0].snippet.thumbnails.high.url);
+                bot.reply(message, data.items[0].snippet.thumbnails.high.url);
             })
             .catch(function (err) {
                 console.log('error', err);
