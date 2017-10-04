@@ -18,8 +18,8 @@ module.exports = (handles, controller, bot) => {
         };
         rp(options)
             .then(function (data) {
-                console.log(data.items[0].id.videoId);
-                //bot.reply(message, data.items[0].snippet.thumbnails.high.url);
+                //console.log(data.items[0].id.videoId);
+                bot.reply(message, 'https://www.youtube.com/watch?v=' + data.items[0].id.videoId);
             })
             .catch(function (err) {
                 console.log('error', err);
