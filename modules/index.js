@@ -33,6 +33,7 @@ module.exports = function () {
     addHandler(['call me (.*)', 'my name is (.*)'], 'callme');
     addHandler(['wiki (.*)'], 'wikipedia');
     addHandler(['yt (.*)'], 'youtube');
+    addHandler(['giphy (.*)'], 'giphy');
     addHandler(['codepen (.*)'], 'codepen');
     addHandler(['uptime', 'identify yourself', 'who are you', 'what is your name'], 'uptime');
     addHandler(['hello', 'hi'], 'greetings');
