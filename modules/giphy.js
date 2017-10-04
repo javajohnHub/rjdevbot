@@ -15,8 +15,10 @@ module.exports = (handles, controller, bot) => {
         };
         rp(options)
             .then(function (data) {
-                //console.log(data.data[0].bitly_gif_url);
-                bot.reply(message, data.data[0].bitly_gif_url);
+                console.log();
+                if(data.data[0].rating === 'pg'){
+                    bot.reply(message, data.data[0].bitly_gif_url);
+                }
             })
             .catch(function (err) {
                 console.log('error', err);
