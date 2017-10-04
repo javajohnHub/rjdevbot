@@ -1,6 +1,6 @@
 module.exports = (handles, controller, bot) => {
     var rp = require('request-promise');
-    controller.hears(handles, 'direct_message,direct_mention,mention', function (bot, message) {
+    controller.hears(handles, 'direct_message,direct_mention,mention, ambient', function (bot, message) {
         console.log(message);
         console.log(message.match[1]);
         var search_term = encodeURIComponent(message.match[1]);
