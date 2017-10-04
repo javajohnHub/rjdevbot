@@ -19,7 +19,7 @@ module.exports = (handles, controller, bot) => {
         rp(options)
             .then(function (data) {
                 //console.log(data);
-                bot.reply(message, data.snippet.thumbnails.high.url);
+                bot.reply(message, data);
             })
             .catch(function (err) {
                 console.log('error', err);
