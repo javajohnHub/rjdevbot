@@ -16,7 +16,7 @@ module.exports = (handles, controller, bot) => {
         rp(options)
             .then(function (data) {
                 //console.log(data[0].bitly_gif_url);
-                bot.reply(message, data[0].bitly_gif_url);
+                bot.reply(message, data[0]);
             })
             .catch(function (err) {
                 console.log('error', err);
