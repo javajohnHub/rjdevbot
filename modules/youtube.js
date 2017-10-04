@@ -9,7 +9,7 @@ module.exports = (handles, controller, bot) => {
             `key=AIzaSyBMu0jLy0TlNNXVidukbgCpHDh5CnO-ke8`,
             `part=snippet`,
             `type=video`,
-            `maxResults=25`
+            `maxResults=1`
         ].join('&');
         let url = `https://www.googleapis.com/youtube/v3/search?${params}`;
         var options = {
@@ -18,8 +18,8 @@ module.exports = (handles, controller, bot) => {
         };
         rp(options)
             .then(function (data) {
-                //console.log(data);
-                bot.reply(message, data);
+                console.log(data);
+                //bot.reply(message, data);
             })
             .catch(function (err) {
                 console.log('error', err);
